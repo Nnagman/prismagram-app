@@ -1,1 +1,3 @@
-yarn add styled-components react-navigation apollo-boost graphql react-apollo-hooks
+yarn add styled-components react-navigation apollo-boost graphql @apollo/react-hooks
+
+yarn add apollo-cache-inmemory apollo-cache-persist
