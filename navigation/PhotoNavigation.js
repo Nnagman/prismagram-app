@@ -8,11 +8,11 @@ import UploadPhoto from "../screens/Photo/UploadPhoto";
 const Tab = createMaterialTopTabNavigator();
 const Stack = createStackNavigator();
 
-function Phototabs() {
+function PhotoTabs() {
   return (
     <Tab.Navigator tabBarPosition="bottom">
-      <Tab.screen name="SelectPhoto" component={SelectPhoto} />
-      <Tab.screen name="TakePhoto" component={TakePhoto} />
+      <Tab.Screen name="SelectPhoto" component={SelectPhoto} />
+      <Tab.Screen name="TakePhoto" component={TakePhoto} />
     </Tab.Navigator>
   );
 }
@@ -20,7 +20,7 @@ function Phototabs() {
 function PhotoNavigation() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Phototabs" component={Phototabs} />
+      <Stack.Screen name="PhotoTabs" component={PhotoTabs} />
       <Stack.Screen name="UploadPhoto" component={UploadPhoto} />
     </Stack.Navigator>
   );
