@@ -5,3 +5,5 @@ yarn add apollo-cache-inmemory apollo-cache-persist
 yarn add expo-asset expo-font
 
 yarn add prop-types
+
+yarn add expo-facebook
