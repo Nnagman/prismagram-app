@@ -1,5 +1,6 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Platform } from "react-native";
+import NavIcon from "../components/NavIcon";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../screens/Tabs/Home";
@@ -14,7 +15,9 @@ const stackFactory = (initialRoute) => {
   let Stack = createStackNavigator();
   let { name, params } = initialRoute.route;
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{ headerStyle: { backgroundColor: "#EFEEEF" } }}
+    >
       <Stack.Screen
         name={name}
         component={params.routeName}
@@ -26,7 +29,14 @@ const stackFactory = (initialRoute) => {
 
 function BottomTabNavigation() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      tabBarOptions={{
+        showLabel: false,
+        tabStyle: {
+          backgroundColor: "#EFEEEF",
+        },
+      }}
+    >
       <Tab.Screen
         name="Home"
         component={stackFactory}
@@ -35,13 +45,31 @@ function BottomTabNavigation() {
           customConfig: {
             title: "Home",
             headerRight: () => <MessagesLink />,
+            headerTitle: <NavIcon name="logo-instagram" size={36} />,
+            tabBarIcon: ({ focused }) => (
+              <NavIcon
+                focused={focused}
+                name={Platform.OS === "ios" ? "ios-home" : "md-home"}
+              />
+            ),
           },
         }}
       />
       <Tab.Screen
         name="Search"
         component={stackFactory}
-        initialParams={{ routeName: Search, customConfig: { title: "Search" } }}
+        initialParams={{
+          routeName: Search,
+          customConfig: {
+            title: "Search",
+            tabBarIcon: ({ focused }) => (
+              <NavIcon
+                focused={focused}
+                name={Platform.OS === "ios" ? "ios-search" : "md-search"}
+              />
+            ),
+          },
+        }}
       />
       <Tab.Screen
         name="Add"
@@ -52,13 +80,39 @@ function BottomTabNavigation() {
           },
         })}
         component={View}
+        initialParams={{
+          customConfig: {
+            tabBarIcon: ({ focused }) => (
+              <NavIcon
+                focused={focused}
+                name={Platform.OS === "ios" ? "ios-add" : "md-add"}
+              />
+            ),
+          },
+        }}
       />
       <Tab.Screen
         name="Notifications"
         component={stackFactory}
         initialParams={{
           routeName: Notifications,
-          customConfig: { title: "Notifications" },
+          customConfig: {
+            title: "Notifications",
+            tabBarIcon: ({ focused }) => (
+              <NavIcon
+                focused={focused}
+                name={
+                  Platform.OS === "ios"
+                    ? focused
+                      ? "ios-heart"
+                      : "ios-heart-empty"
+                    : focused
+                    ? "md-heart"
+                    : "md-heart-empty"
+                }
+              />
+            ),
+          },
         }}
       />
       <Tab.Screen
@@ -66,7 +120,15 @@ function BottomTabNavigation() {
         component={stackFactory}
         initialParams={{
           routeName: Profile,
-          customConfig: { title: "Profile" },
+          customConfig: {
+            title: "Profile",
+            tabBarIcon: ({ focused }) => (
+              <NavIcon
+                focused={focused}
+                name={Platform.OS === "ios" ? "ios-person" : "md-person"}
+              />
+            ),
+          },
         }}
       />
     </Tab.Navigator>
