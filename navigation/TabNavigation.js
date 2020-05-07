@@ -8,6 +8,7 @@ import Search from "../screens/Tabs/Search";
 import Notifications from "../screens/Tabs/Notifications";
 import Profile from "../screens/Tabs/Profile";
 import MessagesLink from "../components/MessagesLink";
+import { stackStyles } from "./config";
 
 const Tab = createBottomTabNavigator();
 
@@ -15,9 +16,7 @@ const stackFactory = (initialRoute) => {
   let Stack = createStackNavigator();
   let { name, params } = initialRoute.route;
   return (
-    <Stack.Navigator
-      screenOptions={{ headerStyle: { backgroundColor: "#EFEEEF" } }}
-    >
+    <Stack.Navigator screenOptions={{ headerStyle: { ...stackStyles } }}>
       <Stack.Screen
         name={name}
         component={params.routeName}
@@ -28,12 +27,13 @@ const stackFactory = (initialRoute) => {
 };
 
 function BottomTabNavigation() {
+  console.log(Platform.OS);
   return (
     <Tab.Navigator
       tabBarOptions={{
         showLabel: false,
-        tabStyle: {
-          backgroundColor: "#EFEEEF",
+        style: {
+          backgroundColor: "#FAFAFA",
         },
       }}
     >
