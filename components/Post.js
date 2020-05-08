@@ -92,11 +92,7 @@ const Post = ({
             <IconContainer>
               <Ionicons
                 size={28}
-                name={
-                  Platform.OS === "ios"
-                    ? "ios-message-empty"
-                    : "md-message-empty"
-                }
+                name={Platform.OS === "ios" ? "ios-text" : "md-text"}
               />
             </IconContainer>
           </Touchable>
