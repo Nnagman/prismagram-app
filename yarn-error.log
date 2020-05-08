@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Nnagman\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @react-navigation/material-top-tabs react-native-tab-view
+  C:\Program Files\nodejs\node.exe C:\Users\Nnagman\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-swiper
 
 PATH: 
-  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Nnagman\AppData\Local\Android\Sdk\platform-tools\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Python;C:\Program Files\Bandizip\;C:\Users\Nnagman\AppData\Local\GitHubDesktop\bin;C:\Python\Scripts;;C:\Users\Nnagman\AppData\Local\Microsoft\WindowsApps;C:\Users\Nnagman\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nnagman\AppData\Roaming\npm
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Nnagman\AppData\Local\Android\Sdk\platform-tools\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Python;C:\Program Files\Bandizip\;C:\Users\Nnagman\AppData\Local\GitHubDesktop\bin;C:\Python\Scripts;;C:\Users\Nnagman\AppData\Local\Microsoft\WindowsApps;C:\Users\Nnagman\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nnagman\AppData\Roaming\npm
 
 Yarn version: 
   1.22.4
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\Nnagman\Desktop\nomadCoder\instaClone\prismagram-app\node_modules\@babel\plugin-transform-runtime\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Nnagman\Desktop\nomadCoder\instaClone\prismagram-app\node_modules\base64\test\data'
 
 npm manifest: 
   {
@@ -28,8 +28,10 @@ npm manifest:
     },
     "dependencies": {
       "@apollo/react-hooks": "^3.1.5",
+      "@expo/vector-icons": "^10.1.0",
       "@react-native-community/masked-view": "^0.1.10",
       "@react-navigation/bottom-tabs": "^5.2.8",
+      "@react-navigation/material-top-tabs": "^5.1.12",
       "@react-navigation/native": "^5.1.7",
       "@react-navigation/stack": "^5.2.14",
       "apollo-boost": "^0.4.7",
@@ -38,9 +40,12 @@ npm manifest:
       "expo": "~37.0.3",
       "expo-asset": "^8.1.4",
       "expo-cli": "^3.20.0",
+      "expo-facebook": "^8.1.0",
       "expo-font": "^8.1.1",
+      "expo-google-app-auth": "^8.1.0",
       "g": "^2.0.1",
       "graphql": "^15.0.0",
+      "prop-types": "^15.7.2",
       "react": "~16.9.0",
       "react-apollo-hooks": "^0.5.0",
       "react-dom": "~16.9.0",
@@ -49,6 +54,7 @@ npm manifest:
       "react-native-reanimated": "~1.7.0",
       "react-native-safe-area-context": "^0.7.3",
       "react-native-screens": "^2.7.0",
+      "react-native-tab-view": "^2.14.0",
       "react-native-web": "~0.11.7",
       "react-navigation": "^4.3.8",
       "react-navigation-stack": "^2.3.13",
@@ -164,7 +170,7 @@ Lockfile:
       semver "^5.4.1"
       source-map "^0.5.0"
   
-  "@babel/generator@^7.0.0", "@babel/generator@^7.9.0", "@babel/generator@^7.9.5":
+  "@babel/generator@^7.0.0", "@babel/generator@^7.9.0":
     version "7.9.5"
     resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.9.5.tgz#27f0917741acc41e6eaaced6d68f96c3fa9afaf9"
     integrity sha512-GbNIxVB3ZJe3tLeDm1HSn2AhuD/mVcyLDpgtLXa5tplmWrJdF/elxB56XNqCuD6szyNkDi6wuoKXln3QeBmCHQ==
@@ -174,7 +180,7 @@ Lockfile:
       lodash "^4.17.13"
       source-map "^0.5.0"
   
-  "@babel/generator@^7.9.6":
+  "@babel/generator@^7.9.5", "@babel/generator@^7.9.6":
     version "7.9.6"
     resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.9.6.tgz#5408c82ac5de98cda0d77d8124e99fa1f2170a43"
     integrity sha512-+htwWKJbH2bL72HRluF8zumBxzuX0ZZUFl3JLNyoUjM/Ho8wnVpPXM6aUz8cfKDqQ/h7zHqKt4xzJteUosckqQ==
@@ -445,12 +451,12 @@ Lockfile:
       chalk "^2.0.0"
       js-tokens "^4.0.0"
   
-  "@babel/parser@^7.0.0", "@babel/parser@^7.8.6", "@babel/parser@^7.9.0":
+  "@babel/parser@^7.0.0":
     version "7.9.4"
     resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.9.4.tgz#68a35e6b0319bbc014465be43828300113f2f2e8"
     integrity sha512-bC49otXX6N0/VYhgOMh4gnP26E9xnDZK3TmbNpxYzzz9BQLBosQwfyOe9/cXUU3txYhTzLCbcqd5c8y/OmCjHA==
   
-  "@babel/parser@^7.9.6":
+  "@babel/parser@^7.8.6", "@babel/parser@^7.9.0", "@babel/parser@^7.9.6":
     version "7.9.6"
     resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.9.6.tgz#3b1bbb30dabe600cd72db58720998376ff653bc7"
     integrity sha512-AoeIEJn8vt+d/6+PXDRPaksYhnlbMIiejioBZvvMQsOjW/JYK6k/0dKnvvP3EhK5GfMBWDPtrxRtegWdAcdq9Q==
@@ -1208,7 +1214,7 @@ Lockfile:
       "@babel/parser" "^7.8.6"
       "@babel/types" "^7.8.6"
   
-  "@babel/traverse@^7.0.0", "@babel/traverse@^7.4.5", "@babel/traverse@^7.8.3", "@babel/traverse@^7.8.6", "@babel/traverse@^7.9.0":
+  "@babel/traverse@^7.0.0", "@babel/traverse@^7.8.3", "@babel/traverse@^7.8.6", "@babel/traverse@^7.9.0":
     version "7.9.5"
     resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.9.5.tgz#6e7c56b44e2ac7011a948c21e283ddd9d9db97a2"
     integrity sha512-c4gH3jsvSuGUezlP6rzSJ6jf8fYjLj3hsMZRx/nX0h+fmHN0w+ekubRrHPqnMec0meycA2nwCsJ7dC8IPem2FQ==
@@ -1223,7 +1229,7 @@ Lockfile:
       globals "^11.1.0"
       lodash "^4.17.13"
   
-  "@babel/traverse@^7.9.6":
+  "@babel/traverse@^7.4.5", "@babel/traverse@^7.9.6":
     version "7.9.6"
     resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.9.6.tgz#5540d7577697bf619cc57b92aa0f1c231a94f442"
     integrity sha512-b3rAHSjbxy6VEAvlxM8OV/0X4XrG72zoxme6q1MOoe2vd0bEc+TwayhuC1+Dfgqh1QEG+pj7atQqvUprHIccsg==
@@ -1238,7 +1244,7 @@ Lockfile:
       globals "^11.1.0"
       lodash "^4.17.13"
   
-  "@babel/types@^7.0.0", "@babel/types@^7.4.4", "@babel/types@^7.8.3", "@babel/types@^7.8.6", "@babel/types@^7.9.0", "@babel/types@^7.9.5":
+  "@babel/types@^7.0.0", "@babel/types@^7.4.4", "@babel/types@^7.9.0":
     version "7.9.5"
     resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.9.5.tgz#89231f82915a8a566a703b3b20133f73da6b9444"
     integrity sha512-XjnvNqenk818r5zMaba+sLQjnbda31UfUURv3ei0qPQw4u+j2jMyJ5b11y8ZHYTRSI3NnInQkkkRT4fLqqPdHg==
@@ -1247,7 +1253,7 @@ Lockfile:
       lodash "^4.17.13"
       to-fast-properties "^2.0.0"
   
-  "@babel/types@^7.9.6":
+  "@babel/types@^7.8.3", "@babel/types@^7.8.6", "@babel/types@^7.9.5", "@babel/types@^7.9.6":
     version "7.9.6"
     resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.9.6.tgz#2c5502b427251e9de1bd2dff95add646d95cc9f7"
     integrity sha512-qxXzvBO//jO9ZnoasKF1uJzHd2+M6Q2ZPIVfnFps8JJvXy0ZBbwbNOmE6SGIY5XOY6d1Bo5lb9d9RJ8nv3WSeA==
@@ -1579,7 +1585,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@expo/traveling-fastlane-linux/-/traveling-fastlane-linux-1.13.1.tgz#23d0bedfc085c455c29f2445e7419ce4fadd76b8"
     integrity sha512-6VnrOfbU9vOtdVpkalu23q1BIyoj5AKALDWo2mVhoPm8Qi9xiIdjT+pfiMeBUDrRuAitRZ3DORmpz4RtsZqDsg==
   
-  "@expo/vector-icons@^10.0.2":
+  "@expo/vector-icons@^10.0.2", "@expo/vector-icons@^10.1.0":
     version "10.1.0"
     resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-10.1.0.tgz#3fb2517924b031c1b98f86fa51a2032a257759b0"
     integrity sha512-6ikFslHORJgsb8wKeSgXYfZNNXsiTb3yQf5xaNyGUCYg4zqE7VchdhnH9yZKTI3Lu16jna52pHQZl+3jcOSAbQ==
@@ -2374,17 +2380,24 @@ Lockfile:
       query-string "^6.11.1"
       react-is "^16.13.0"
   
-  "@react-navigation/core@^5.3.5":
-    version "5.3.5"
-    resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.3.5.tgz#a52149c1e6cc6b5c00849d756ace5b3289736637"
-    integrity sha512-s+XL+2r/NS9e0/kcRCBJ2NV7+3zqAqLXFHX2+qzES++oc+gb5A8JSrHjwRUwxMqR2AOqSfz5HSyYXnYIwgl4JQ==
+  "@react-navigation/core@^5.4.0":
+    version "5.4.0"
+    resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.4.0.tgz#6b4973d48396d28ed3efee582b28807682a5865d"
+    integrity sha512-tDmfw7nzbJg186cXHUPl/VYEGSepzBXNiHRv4GTxLQ+S9cnZgPyrGv56kiSvHhxCzyNGN0nHscCY9IUv08KL6Q==
     dependencies:
-      "@react-navigation/routers" "^5.4.1"
+      "@react-navigation/routers" "^5.4.2"
       escape-string-regexp "^2.0.0"
       nanoid "^3.0.2"
       query-string "^6.12.0"
       react-is "^16.13.0"
       use-subscription "^1.4.0"
+  
+  "@react-navigation/material-top-tabs@^5.1.12":
+    version "5.1.12"
+    resolved "https://registry.yarnpkg.com/@react-navigation/material-top-tabs/-/material-top-tabs-5.1.12.tgz#df9725a2c6869c48c9673699eb3785f19b93e8d5"
+    integrity sha512-h/QI6mgjv3l7xAO3MvT2fshnrwRa/9Sq9wob8O896EhXb0IKXIcoIxQVXR6LwSEkzKdMQxgXowAqpQXbR2nM9g==
+    dependencies:
+      color "^3.1.2"
   
   "@react-navigation/native@^3.7.12":
     version "3.7.12"
@@ -2395,16 +2408,16 @@ Lockfile:
       react-native-safe-area-view "^0.14.9"
   
   "@react-navigation/native@^5.1.7":
-    version "5.1.7"
-    resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.1.7.tgz#929815726504007d73ad77301e4659e910fe8d41"
-    integrity sha512-0/TWbeorcLb42AN9KYK4rWzZk3RrpX95vIuqzcI5zPlo/Yhs3h+TEXX1s+6n2MT42W8xHPZzK/RaHnBGKD0aLw==
+    version "5.2.3"
+    resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.2.3.tgz#2e2ec88396d2be96d11f9430b4af6dcea34029b0"
+    integrity sha512-fQfW506n9eTwBGiUbuxSvI7DTBXwR3IqAlooBCUHRJC0WiuSUm3aGg6eESJc8nW1A64hu33i/ITf10mn3Ec6Tg==
     dependencies:
-      "@react-navigation/core" "^5.3.5"
+      "@react-navigation/core" "^5.4.0"
   
-  "@react-navigation/routers@^5.4.1":
-    version "5.4.1"
-    resolved "https://registry.yarnpkg.com/@react-navigation/routers/-/routers-5.4.1.tgz#7d5d0931a591e3dd6c917cb5dc7c7ae9e794e1cd"
-    integrity sha512-Gay9yCrE2xuvUUJcbG+giqnh2ZAPyYecO5RJ3tXDztmT+UaJoyHLSfyjkb74gSjij684udtzUKkoXGBbgcANhg==
+  "@react-navigation/routers@^5.4.2":
+    version "5.4.2"
+    resolved "https://registry.yarnpkg.com/@react-navigation/routers/-/routers-5.4.2.tgz#10c1f32b0ddde935d1fc9123fb1683472bf31815"
+    integrity sha512-YjGv4H0LXD2YnDjSBAJzIKzlZehFRqWfR2IJtZor/mfLkOi6qDl8yJeqZKbLEeQsu6o6493QdxM81tqX293kyQ==
     dependencies:
       nanoid "^3.0.2"
   
@@ -5844,6 +5857,13 @@ Lockfile:
       snapdragon "^0.8.1"
       to-regex "^3.0.1"
   
+  expo-app-auth@~9.0.0:
+    version "9.0.0"
+    resolved "https://registry.yarnpkg.com/expo-app-auth/-/expo-app-auth-9.0.0.tgz#879893b90bb083acd705012495bc907cd5d700e7"
+    integrity sha512-loDPUxVNhCJVxjDdLevoApOBQkcK8QQXSNyWqKIAvzwjuxQQ7EtwSXOVMThsPU/wWCHOW/Zbj7ykBYUmJi6jLA==
+    dependencies:
+      invariant "^2.2.4"
+  
   expo-asset@^8.1.4, expo-asset@~8.1.4:
     version "8.1.4"
     resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-8.1.4.tgz#5265c28c1c279b2f9779269195bec4caf250ba5d"
@@ -5926,6 +5946,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/expo-error-recovery/-/expo-error-recovery-1.1.0.tgz#98b9de5400dbfd022d1631739f3bf5e7016565da"
     integrity sha512-33aRfPaXdAt0df1TL26JjM5qCAoEW8RAExjgMgunPcdQcf4sWiWFm3qYL8zrO/8DM4uUq4X2FCuPLHMlOYT/aw==
   
+  expo-facebook@^8.1.0:
+    version "8.1.0"
+    resolved "https://registry.yarnpkg.com/expo-facebook/-/expo-facebook-8.1.0.tgz#e23e1532b7622971ec6f9a3175fa29f864a25f49"
+    integrity sha512-tWr9zxHR/PLEoGm/2zJGzmRCMcgk/hKowV4bh7Xm/Diy34jlvYaWJEhiJT58v0QoSD/IXhUPYkCMFDL2hOGRFA==
+  
   expo-file-system@~8.1.0:
     version "8.1.0"
     resolved "https://registry.yarnpkg.com/expo-file-system/-/expo-file-system-8.1.0.tgz#d6aa66fa32c19982b94d0013f963c5ee972dfd6d"
@@ -5940,6 +5965,14 @@ Lockfile:
     dependencies:
       fbjs "1.0.0"
       fontfaceobserver "^2.1.0"
+  
+  expo-google-app-auth@^8.1.0:
+    version "8.1.0"
+    resolved "https://registry.yarnpkg.com/expo-google-app-auth/-/expo-google-app-auth-8.1.0.tgz#2f173cdd47733311ccdae911a1a6c74963a3593b"
+    integrity sha512-7daHlFd9zNMOpY49EPBVtgY+KUeI1/dFooEGNoQZcXPQGDo1Sw9AYqyYJvYNXni4n0sFHCFFHxEHL11ECXZzaw==
+    dependencies:
+      expo-app-auth "~9.0.0"
+      expo-constants "~9.0.0"
   
   expo-keep-awake@~8.1.0:
     version "8.1.0"
@@ -11191,7 +11224,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.7.0.tgz#2d3cf3c39a665e9ca1c774264fccdb90e7944047"
     integrity sha512-n/23IBOkrTKCfuUd6tFeRkn3lB2QZ3cmvoubRscR0JU/Zl4/ZyKmwnFmUv1/Fr+2GH/H8UTX59kEKDYYg3dMgA==
   
-  react-native-tab-view@^2.11.0:
+  react-native-tab-view@^2.11.0, react-native-tab-view@^2.14.0:
     version "2.14.0"
     resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-2.14.0.tgz#dd801f82fdb8e92fce9688b78d13923f3a5a2b3f"
     integrity sha512-Z7XAM3NsMB96c17e9EAveunk7SUgilXWwVUTmWI1u/+p2SeOMUOB87z+//UXrcVlD1e9BPweR73q7dq7krTzTg==
