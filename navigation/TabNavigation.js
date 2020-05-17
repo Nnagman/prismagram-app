@@ -16,7 +16,11 @@ const stackFactory = (initialRoute) => {
   let Stack = createStackNavigator();
   let { name, params } = initialRoute.route;
   return (
-    <Stack.Navigator screenOptions={{ headerStyle: { ...stackStyles } }}>
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: { ...stackStyles },
+      }}
+    >
       <Stack.Screen
         name={name}
         component={params.routeName}
@@ -27,7 +31,6 @@ const stackFactory = (initialRoute) => {
 };
 
 function BottomTabNavigation() {
-  console.log(Platform.OS);
   return (
     <Tab.Navigator
       tabBarOptions={{
@@ -61,7 +64,6 @@ function BottomTabNavigation() {
         initialParams={{
           routeName: Search,
           customConfig: {
-            title: "Search",
             tabBarIcon: ({ focused }) => (
               <NavIcon
                 focused={focused}
