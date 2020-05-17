@@ -10,6 +10,7 @@ import Profile from "../screens/Tabs/Profile";
 import Detail from "../screens/Detail";
 import MessagesLink from "../components/MessagesLink";
 import { stackStyles } from "./config";
+import styles from "../styles";
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +29,11 @@ const stackFactory = (initialRoute) => {
         component={params.routeName}
         options={params.customConfig}
       />
-      <Stack.Screen name="Detail" component={Detail} />
+      <Stack.Screen
+        name="Detail"
+        component={Detail}
+        options={{ headerTintColor: styles.blackColor, title: "Photo" }}
+      />
     </Stack.Navigator>
   );
 };
@@ -68,6 +73,7 @@ function BottomTabNavigation() {
         initialParams={{
           routeName: Search,
           customConfig: {
+            headerBackTitle: null,
             tabBarIcon: ({ focused }) => (
               <NavIcon
                 focused={focused}
