@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Nnagman\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-swiper
+  C:\Program Files\nodejs\node.exe C:\Users\Nnagman\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @react-navigation/compact
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Nnagman\AppData\Local\Android\Sdk\platform-tools\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Python;C:\Program Files\Bandizip\;C:\Users\Nnagman\AppData\Local\GitHubDesktop\bin;C:\Python\Scripts;;C:\Users\Nnagman\AppData\Local\Microsoft\WindowsApps;C:\Users\Nnagman\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nnagman\AppData\Roaming\npm
@@ -14,7 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\Nnagman\Desktop\nomadCoder\instaClone\prismagram-app\node_modules\base64\test\data'
+  Error: https://registry.yarnpkg.com/@react-navigation%2fcompact: Not found
+      at Request.params.callback [as _callback] (C:\Users\Nnagman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66987:18)
+      at Request.self.callback (C:\Users\Nnagman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (C:\Users\Nnagman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (C:\Users\Nnagman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1183:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
 
 npm manifest: 
   {
@@ -54,6 +64,7 @@ npm manifest:
       "react-native-reanimated": "~1.7.0",
       "react-native-safe-area-context": "^0.7.3",
       "react-native-screens": "^2.7.0",
+      "react-native-swiper": "^1.5.14",
       "react-native-tab-view": "^2.14.0",
       "react-native-web": "~0.11.7",
       "react-navigation": "^4.3.8",
@@ -10898,7 +10909,7 @@ Lockfile:
       kleur "^3.0.3"
       sisteransi "^1.0.4"
   
-  prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+  prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
     version "15.7.2"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -11223,6 +11234,13 @@ Lockfile:
     version "2.7.0"
     resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.7.0.tgz#2d3cf3c39a665e9ca1c774264fccdb90e7944047"
     integrity sha512-n/23IBOkrTKCfuUd6tFeRkn3lB2QZ3cmvoubRscR0JU/Zl4/ZyKmwnFmUv1/Fr+2GH/H8UTX59kEKDYYg3dMgA==
+  
+  react-native-swiper@^1.6.0-nightly.5:
+    version "1.6.0-nightly.5"
+    resolved "https://registry.yarnpkg.com/react-native-swiper/-/react-native-swiper-1.6.0-nightly.5.tgz#894319918ff22680c325b8052457ccf213a7c7cd"
+    integrity sha512-0siIUvD7FcGPSjRtsMyTWWmosUA+kJNT0WbJ0lf3Drp8vxeuWAg5kSmvQO+dJpISugcBWpfBc0OBDC5fBl+DsA==
+    dependencies:
+      prop-types "^15.5.10"
   
   react-native-tab-view@^2.11.0, react-native-tab-view@^2.14.0:
     version "2.14.0"

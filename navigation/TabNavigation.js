@@ -7,6 +7,7 @@ import Home from "../screens/Tabs/Home";
 import Search from "../screens/Tabs/Search";
 import Notifications from "../screens/Tabs/Notifications";
 import Profile from "../screens/Tabs/Profile";
+import Detail from "../screens/Detail";
 import MessagesLink from "../components/MessagesLink";
 import { stackStyles } from "./config";
 
@@ -19,6 +20,7 @@ const stackFactory = (initialRoute) => {
     <Stack.Navigator
       screenOptions={{
         headerStyle: { ...stackStyles },
+        cardStyle: { backgroundColor: "white" },
       }}
     >
       <Stack.Screen
@@ -26,6 +28,7 @@ const stackFactory = (initialRoute) => {
         component={params.routeName}
         options={params.customConfig}
       />
+      <Stack.Screen name="Detail" component={Detail} />
     </Stack.Navigator>
   );
 };
@@ -39,6 +42,7 @@ function BottomTabNavigation() {
           backgroundColor: "#FAFAFA",
         },
       }}
+      initialRouteName={"Search"}
     >
       <Tab.Screen
         name="Home"
